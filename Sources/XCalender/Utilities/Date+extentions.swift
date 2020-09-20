@@ -47,4 +47,14 @@ public extension Date {
     func month(by value: Int) -> Date? {
         return Calendar.current.date(byAdding: .month, value: value, to: self)
     }
+        
+    func isEqualTo(_ date: Date) -> Bool {
+        let order = Calendar.current.compare(date, to: self, toGranularity: .day)
+        switch order {
+        case .orderedSame:
+            return true
+        default:
+            return false
+        }
+    }
 }
