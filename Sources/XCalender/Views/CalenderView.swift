@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-@objc protocol XCalenderDelegate {
+@objc public protocol XCalenderDelegate {
     @objc optional func didSelected(date: Date)
     @objc optional func didSelectedDate(string: String)
 }
@@ -32,7 +32,7 @@ final public class XCallenderView: UIView {
         self.setUp()
     }
     
-    override func awakeFromNib() {
+    public override func awakeFromNib() {
         super.awakeFromNib()
         setUp()
     }
@@ -82,11 +82,11 @@ final public class XCallenderView: UIView {
 }
 
 extension XCallenderView: UICollectionViewDelegate, UICollectionViewDataSource {
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return self.arrayDates.count
     }
     
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+    public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell: XCalenderCell = collectionView.dequeueReusableCell(for: indexPath)
         let date =  self.arrayDates[indexPath.row]
         print(date, self.currentDate)
@@ -99,7 +99,7 @@ extension XCallenderView: UICollectionViewDelegate, UICollectionViewDataSource {
         return cell
     }
     
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+    public func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         collectionView.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: true)
         hasSelectedDate = true
         let dateSelected = self.arrayDates[indexPath.item]
