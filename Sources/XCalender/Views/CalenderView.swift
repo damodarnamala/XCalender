@@ -14,7 +14,7 @@ import UIKit
 }
 
 @IBDesignable
-final class XCallenderView: UIView {
+final public class XCallenderView: UIView {
     
     var dateCollection: UICollectionView = {
         let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
