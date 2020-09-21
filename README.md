@@ -1,7 +1,7 @@
 # XCalender
-'XCalendar' is a  **swift package for calender view** to for an iOS application, which supports from **iOS 13** version. This library has the functionality to navigate between months and selection of dates from the calendar. 
+`XCalendar` is a  **swift package** for **calender view** to an iOS application. `XCalendar` supports from **iOS 13** version. This library has the functionality to navigate between months and selection of dates from the calendar. 
 
-### Ussage
+### Usage
 ```
 
 import UIKit
@@ -44,10 +44,10 @@ extension ViewController: XCalenderDelegate {
 
 
 
- -I'm welcoming the community to make changes to this library. Anyonce can raise pullrequest so that we can extend the functionality together.
+ -I'm welcoming the community to make changes to this library. Anyone can raise pullrequest so that we can extend the functionality together.
 
 ## Follow me on social account!
 *   [Email](damodar.namala@gmail.com)
-*   [FaceBook]( https://www.facebook.com/namala.damu)
+*   [Facebook]( https://www.facebook.com/namala.damu)
 *   [Twitter](https://twitter.com/NamalaDamodar)
-*   [Linked-in](https://www.linkedin.com/in/damodarnamala/)
+*   [LinkedIn](https://www.linkedin.com/in/damodarnamala/)
